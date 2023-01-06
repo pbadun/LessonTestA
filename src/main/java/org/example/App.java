@@ -10,7 +10,9 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Hello. Press input text");
         Scanner scanner = new Scanner(System.in);
-        System.out.println(String.format("Total wolds %d", new CalcText().countWorld(scanner.nextLine())));
+        String text = scanner.nextLine();
+        System.out.println(String.format("Total wolds %d", new CalcText().countWorld(text)));
+        System.out.println(String.format("Total char %d", new CalcChar().calc(text)));
     }
 
 }
